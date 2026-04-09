@@ -1,6 +1,7 @@
 let players = JSON.parse(localStorage.getItem("players")) || [];
 
 function addPlayer() {
+  alert("Adicionado com sucesso ✅");
   const input = document.getElementById("playerName");
   const name = input.value;
 
@@ -37,4 +38,5 @@ function renderPlayers() {
 function saveData() {
   localStorage.setItem("players", JSON.stringify(players));
 }
+
 renderPlayers();

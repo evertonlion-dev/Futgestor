@@ -81,6 +81,7 @@ li button {
     padding: 15px;
   }
 }
+
 li {
   animation: fadeIn 0.3s ease;
 }
@@ -95,6 +96,7 @@ li {
     transform: translateY(0);
   }
 }
+
 button {
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
