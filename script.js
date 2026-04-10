@@ -24,12 +24,18 @@ function renderPlayers() {
   const list = document.getElementById("playerList");
   list.innerHTML = "";
 
+  if (players.length === 0) {
+    list.innerHTML = "<p>Nenhum jogador ainda</p>";
+    return;
+  }
+
   players.forEach((player, index) => {
     const li = document.createElement("li");
     li.textContent = player;
 
     const btn = document.createElement("button");
     btn.textContent = "❌";
+
     btn.onclick = () => {
       players.splice(index, 1);
       saveData();
